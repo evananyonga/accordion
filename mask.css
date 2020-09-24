@@ -1,0 +1,139 @@
+/* CSS created by EvaNanyonga*/
+
+circle[Attributes Style] {
+
+	fill: none;
+    stroke: rgba(243,92,39,0.2);
+    stroke-width: 12.5206;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 1.2514, 6.2571;
+    cx: 200;
+    cy: 200;
+    r: 190;
+}
+
+.mask-wrapper {
+
+	display: flex;
+	flex-direction: row;
+}
+
+#objectives-diagram {
+
+	width: auto;
+	margin-right: 125px;
+	/*float: left;*/
+}
+
+#svg-objectives-diagram {
+
+	width: 500px;
+}
+
+#svg-objectives-diagram .offer-training, #svg-objectives-diagram .standards, #svg-objectives-diagram .const-claims\--active {
+
+	fill: transparent;
+    stroke: #000;
+    transform-origin: center;
+    transition: all .5s;
+}
+
+#objectives-content-wrapper {
+
+	width: 50%;
+	align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#svg-objectives-diagram .offer-training\--active, #svg-objectives-diagram .standards\--active, 
+#svg-objectives-diagram .const-claims\--active {
+
+	stroke-width: 5.8225;
+    transform: rotate(50deg);
+}
+
+#svg-objectives-diagram .offer-training\--active {
+
+	stroke-dasharray: 100,15;
+}
+
+#svg-objectives-diagram .offer-training\--active, #svg-objectives-diagram .standards\--active, 
+#svg-objectives-diagram .const-claims\--active, .toggleAccordion\--active {
+
+	stroke: #f05e3d;
+}
+#svg-objectives-diagram .const-claims\--active {
+
+	stroke-dasharray: 5.8248,4.1241;
+	stroke-width: 19;
+}
+
+.objectives-content-wrapper {
+
+	align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.accordion-container {
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.toggleAccordion {
+
+	background: transparent;
+    border: 0;
+    color: #000;
+    padding-left: 0;
+    position: relative;
+}
+
+.toggleAccordion:after {
+
+	content: " +";
+    font-size: 18px;
+    position: absolute;
+    right: -10px;
+    top: 0;
+}
+
+.toggleAccordion\--active:after {
+
+	content: " -";
+}
+
+.accordionContent {
+
+	margin-top: 20px;
+    max-height: 0;
+    display: none;
+    overflow: hidden;
+    transition: all 255ms cubic-bezier(.29,.19,.405,1);
+}
+
+.accordionContent\--active {
+
+	margin-bottom: 40px;
+    max-height: 500px;
+}
+
+.accordion-text {
+    display: block;
+}
+.active .accordionContent:hover{
+	background-color: #ccc;
+}
+
+
+/*[[i*j for j in range(1,11)] for i in range(7,9)]
+for i in range(7,9):
+        for j in range(1,11):
+               print(f"{i}*{j}={i*j}")*/

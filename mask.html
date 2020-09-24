@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML mask and Accordion</title>
+	<link rel="stylesheet" type="text/css" href="mask.css">
+	
+</head>
+<body>
+	<!-- <svg viewBox="-10 -10 120 120">
+			  <mask id="myMask"> -->
+			    <!-- Everything under a white pixel will be visible 
+			    <rect x="0" y="0" width="100" height="100" fill="white" /> -->
+
+			    <!-- Everything under a black pixel will be invisible 
+			    <path d="M10,35 A20,20,0,0,1,50,35 A20,20,0,0,1,90,35 Q90,65,50,95 Q10,65,10,35 Z" fill="black" />
+			  </mask> -->
+ 
+	<!--   <polygon points="-10,110 110,110 110,-10" fill="orange" /> -->
+
+		  <!-- with this mask applied, we "punch" a heart shape hole into the circle   <circle cx="50" cy="50" r="50" mask="url(#myMask)" />
+		</svg> -->
+
+	<div class="objectives-grid">
+		<div class="mask-wrapper">
+			<div id="objectives-diagram" aria-hidden="true">
+				<svg version="1.1" id="svg-objectives-diagram" x='0' y="0" viewBox="0 0 400 400" enable-background="new 0 0 400 400"> 
+					<g>
+						<circle class="offer-training --active" fill="none" stroke="#000000" stroke-width="12.5206" stroke-miterlimit="10" stroke-dasharray="1.2514,6.2571" cx="200" cy="200" r="190"></circle>
+					</g>
+					<circle class="standards --active" fill="none" stroke="#000000" stroke-width="1.2521" stroke-miterlimit="10" cx="200" cy="200" r="156.82"></circle>
+					<g>
+						<circle class="const-claims --active" fill="none" stroke="#000000" stroke-width="1.2521" stroke-dasharray="1.2513,6.2566" stroke-miterlimit="10" cx="200" cy="200" r="124.27"></circle>
+					</g>
+				</svg>
+			</div>
+			<div id="objectives-content-wrapper">
+				<div class="accordion-container">
+					<div class="mskAccordion open">
+						<button class="toggleAccordion --active" type="button" aria-expanded="false">
+							<h4 class="toggle-accordion-text">to offer training on construction contracts</h4>
+						</button>
+						<div class="accordionContent --active">
+							<h2 class="accordion-text">We provide skills-based training on construction contracts and claims to empower our graduates with the knowledge, skills, and competence to work as construction contract and claims professionals.</h2>
+						</div>
+					</div>
+					<div class="mskAccordion close">
+						<button class="toggleAccordion --active" type="button" aria-expanded="false">
+							<h4 class="toggle-accordion-text">to improve professional standards</h4>
+						</button>
+						<div class="accordionContent --active">
+							<h2 class="accordion-text">We improve professional standards within the specialist field of construction law and ensure that projects are run professionally, on-time and in accordance with the provisions of the contract.</h2>
+						</div>
+					</div>
+					<div class="mskAccordion close">
+						<button class="toggleAccordion --active" type="button" aria-expanded="false">
+							<h4 class="toggle-accordion-text">to reduce the number of construction claims</h4>
+						</button>
+						<div class="accordionContent --active">
+							<h2 class="accordion-text">Through our training we hope to reduce the number of construction claims and ensure that in cases where claims do arise, they are resolved quickly and professionally by the people charged with that responsibility.</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="mask.js"></script>
+</body>
+</html>
